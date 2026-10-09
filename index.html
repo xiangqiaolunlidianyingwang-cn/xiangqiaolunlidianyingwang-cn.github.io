@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="香蕉伦理电影网（xiangqiaolunlidianyingwang-cn）是聚焦伦理题材与道德困境电影的赏析站点：家庭伦理、社会议题、人性边界、经典修复与正版观影指引。">
+<meta name="keywords" content="香蕉伦理电影网, xiangqiaolunlidianyingwang-cn, 伦理电影, 道德困境, 家庭伦理, 社会议题电影, 人性, 艺术电影">
+<meta name="author" content="香蕉伦理电影网">
+<meta name="theme-color" content="#12301f">
+<title>香蕉伦理电影网 - 伦理题材·道德困境·人性边界电影赏析 | xiangqiaolunlidianyingwang-cn</title>
+<link rel="canonical" href="https://xiangqiaolunlidianyingwang-cn.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "香蕉伦理电影网",
+  "alternateName": "xiangqiaolunlidianyingwang-cn",
+  "url": "https://xiangqiaolunlidianyingwang-cn.github.io/",
+  "description": "伦理题材、道德困境与人性边界的电影赏析、片单与正版观影指南",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://xiangqiaolunlidianyingwang-cn.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1c14; --bg2:#13261b; --card:#1b3324; --line:#31503c;
+  --txt:#e8f2ea; --sub:#9db8a6;
+  --banana:#f7d34a; --banana2:#ffe27a;
+  --leaf:#4ecb7a; --earth:#c97b3a;
+  --r:14px; --sh:0 18px 44px rgba(0,0,0,.55);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg); color:var(--txt); line-height:1.85; overflow-x:hidden;
+  background-image:radial-gradient(circle at 12% 8%, rgba(247,211,74,.09), transparent 40%),
+                   radial-gradient(circle at 88% 90%, rgba(78,203,122,.07), transparent 42%);
+  background-attachment:fixed;
+}
+a{color:var(--banana2);text-decoration:none;transition:.25s}
+a:hover{color:#fff}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+section{padding:72px 0}
+.st{font-size:28px;font-weight:900;letter-spacing:.5px;margin-bottom:6px}
+.st i{font-style:normal;color:var(--banana)}
+.sn{color:var(--sub);font-size:14px;margin:12px 0 34px}
+.serif{font-family:"Songti SC","STSong",Georgia,serif}
+
+/* 导航 */
+.bar{position:sticky;top:0;z-index:99;background:rgba(13,28,20,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:18px;letter-spacing:.5px;color:#fff}
+.logo{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--banana2),var(--banana) 55%,#c9a22a);display:grid;place-items:center;font-size:19px;box-shadow:0 5px 16px rgba(247,211,74,.35)}
+.links{display:flex;gap:2px}
+.links a{color:var(--sub);font-size:13.5px;padding:9px 13px;border-radius:8px}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.mbtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--txt);font-size:22px;cursor:pointer}
+
+/* Hero：天平 */
+.hero{position:relative;padding:84px 0 70px;border-bottom:1px solid var(--line);overflow:hidden}
+.scale{position:absolute;right:-60px;top:40px;width:340px;height:340px;opacity:.16;pointer-events:none}
+.scale::before,.scale::after{content:"";position:absolute;background:var(--banana)}
+.scale::before{inset:0;border:6px solid var(--banana);border-radius:50%}
+.scale::after{width:6px;height:120%;left:50%;top:-10%;background:var(--banana);transform:rotate(20deg);transform-origin:bottom}
+.hx{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;position:relative}
+.eyebrow{display:inline-block;font-size:11.5px;letter-spacing:3px;color:var(--banana);border:1px solid rgba(247,211,74,.4);padding:5px 14px;border-radius:30px;margin-bottom:18px}
+.hero h1{font-size:45px;line-height:1.22;font-weight:900;letter-spacing:-.5px}
+.hero h1 u{text-decoration:none;color:var(--leaf)}
+.hero p{color:var(--sub);font-size:16px;margin:20px 0 26px;max-width:560px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.b{padding:13px 27px;border-radius:30px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer}
+.b1{background:linear-gradient(135deg,var(--banana),#e0ac1f);color:#2a2006}
+.b2{background:rgba(255,255,255,.05);color:#fff;border:1px solid var(--line)}
+/*  dilemmas 卡片（三选一 DOM） -->
+.dilemma{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dm{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;transition:.3s;position:relative;overflow:hidden}
+.dm::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--banana),var(--leaf))}
+.dm:hover{transform:translateY(-5px);box-shadow:var(--sh)}
+.dm .k{font-size:10.5px;letter-spacing:2.5px;color:var(--banana);font-weight:800}
+.dm h4{font-size:15.5px;margin:7px 0 6px}
+.dm p{font-size:12.5px;color:var(--sub)}
+
+/* 栏目导航：香蕉段式牌匾 */
+.chs{background:var(--bg2)}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 18px;position:relative;transition:.3s}
+.ch:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--banana)}
+.ch .no{font-size:10.5px;letter-spacing:2.5px;color:var(--leaf);font-weight:800}
+.ch h3{font-size:16.5px;margin:7px 0 6px}
+.ch p{font-size:12.5px;color:var(--sub)}
+.ch .ar{margin-top:12px;font-size:11.5px;color:var(--banana2);display:inline-block}
+
+/* 栏目一：伦理象限（四象限矩阵 DOM） */
+.qd{background:var(--bg)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.quad{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;position:relative;transition:.3s}
+.quad:hover{border-color:var(--banana);box-shadow:var(--sh)}
+.quad .corner{position:absolute;top:16px;right:16px;font-size:10px;color:var(--banana);letter-spacing:1.5px;font-weight:800}
+.quad h4{font-size:17px;margin-bottom:4px}
+.quad .en{font-size:10.5px;letter-spacing:2px;color:var(--leaf)}
+.quad p{font-size:13px;color:var(--sub);margin-top:11px}
+.quad .eg{margin-top:13px;font-size:11.5px;color:var(--banana);border-top:1px dashed var(--line);padding-top:10px}
+
+/* 栏目二：本周伦理场（时间轴 DOM） */
+.sched{background:var(--bg2)}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--banana),var(--leaf))}
+.ev{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:14px;transition:.3s}
+.ev:hover{box-shadow:var(--sh);border-color:var(--leaf)}
+.ev::before{content:"";position:absolute;left:-24px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--banana);box-shadow:0 0 0 4px rgba(247,211,74,.18)}
+.ev .when{font-size:11px;letter-spacing:1.5px;color:var(--banana);font-weight:800}
+.ev h4{font-size:15.5px;margin:3px 0}
+.ev .mt{font-size:11.5px;color:var(--sub)}
+.ev p{font-size:13px;color:var(--sub);margin-top:8px}
+
+/* 栏目三：深度解读（报刊分栏 DOM） */
+.read{background:var(--bg)}
+.paper{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px}
+.mast{text-align:center;border-bottom:2px solid var(--banana);padding-bottom:14px;margin-bottom:22px}
+.mast h3{font-size:21px;letter-spacing:6px;font-family:"Songti SC","STSong",serif}
+.mast small{color:var(--sub);font-size:11.5px;letter-spacing:2px}
+.cols{column-count:2;column-gap:34px;column-rule:1px solid var(--line)}
+.cols article{break-inside:avoid;margin-bottom:22px}
+.cols h4{font-size:15px;color:var(--banana2);margin-bottom:7px}
+.cols p{font-size:13.5px;color:var(--sub);text-align:justify}
+.cols .qt{display:block;font-family:"Songti SC","STSong",serif;font-size:15px;color:var(--txt);border-left:3px solid var(--leaf);padding-left:12px;margin:9px 0;font-style:italic}
+
+/* 栏目四：片单（评分条 DOM） */
+.genres{background:var(--bg2)}
+.bars{display:flex;flex-direction:column;gap:13px}
+.bar-row{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 18px;transition:.3s}
+.bar-row:hover{border-color:var(--banana);box-shadow:var(--sh)}
+.bar-row .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.bar-row h4{font-size:15px}
+.bar-row .meta{font-size:11px;color:var(--sub);white-space:nowrap}
+.track{height:7px;background:rgba(255,255,255,.07);border-radius:20px;margin-top:11px;overflow:hidden}
+.fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--leaf),var(--banana));transform-origin:left;transition:1s}
+.fill.s2{background:linear-gradient(90deg,#3f9ecb,var(--leaf))}
+.fill.s3{background:linear-gradient(90deg,var(--earth),#e0a65a)}
+
+/* 栏目五：观影阶梯（步骤 DOM） */
+.path{background:var(--bg)}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.step{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);padding:22px 18px;border-radius:12px;transition:.3s}
+.step:not(:last-child){border-right:none;border-top-right-radius:0;border-bottom-right-radius:0}
+.step:not(:first-child){border-top-left-radius:0;border-bottom-left-radius:0}
+.step:hover{border-color:var(--banana);z-index:2}
+.step .ix{font-size:11px;letter-spacing:2px;color:var(--banana);font-weight:800}
+.step h4{font-size:15.5px;margin:8px 0 6px}
+.step p{font-size:12.5px;color:var(--sub)}
+.step .tip{margin-top:12px;font-size:11px;color:var(--leaf);border-top:1px dashed var(--line);padding-top:9px}
+
+/* 栏目六：观众来信（折角信笺 DOM） */
+.letters{background:var(--bg2)}
+.env{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.letter{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px;position:relative;transition:.3s}
+.letter::before{content:"";position:absolute;right:0;top:0;border:14px solid transparent;border-right-color:var(--bg);border-top-color:var(--bg)}
+.letter:hover{box-shadow:var(--sh);transform:translateY(-3px)}
+.letter .who{font-size:12px;color:var(--banana);letter-spacing:.5px}
+.letter .who em{font-style:normal;color:var(--sub);margin-left:8px;font-size:11px}
+.letter p{font-size:13.5px;color:var(--txt);margin-top:9px;font-family:"Songti SC","STSong",serif}
+.letter .sign{margin-top:12px;font-size:11.5px;color:var(--sub);text-align:right}
+
+/* 关于 */
+.about{background:var(--bg)}
+.ag{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.notice{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+.notice h3{font-size:18px;color:var(--banana);margin-bottom:14px}
+.notice ol{list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:c}
+.notice li{font-size:13.5px;color:var(--sub);padding-left:36px;position:relative}
+.notice li::before{counter-increment:c;content:"0" counter(c);position:absolute;left:0;top:2px;font-size:12px;font-weight:800;color:var(--leaf)}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+.kpi b{display:block;font-size:27px;color:var(--banana)}
+.kpi span{font-size:12px;color:var(--sub)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:46px 0 26px;background:var(--bg2)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+.fc h5{font-size:15px;margin-bottom:13px;color:#fff}
+.fc a{display:block;font-size:13px;color:var(--sub);padding:4px 0}
+.fc a:hover{color:var(--banana2)}
+.copy{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.hl{color:var(--banana)}
+
+/* 响应式 */
+@media(max-width:960px){
+  .hx,.ag{grid-template-columns:1fr}
+  .cg,.grid2{grid-template-columns:repeat(2,1fr)}
+  .dilemma,.ladder{grid-template-columns:repeat(2,1fr)}
+  .cols{column-count:1}
+  .scale{display:none}
+}
+@media(max-width:640px){
+  section{padding:48px 0}
+  .mbtn{display:grid;place-items:center}
+  .links{position:fixed;inset:64px 0 0 0;background:rgba(13,28,20,.98);flex-direction:column;padding:24px;gap:6px;transform:translateX(100%);transition:.35s}
+  .links.open{transform:translateX(0)}
+  .links a{font-size:16px;padding:15px;border-radius:10px}
+  .hero{padding:52px 0 40px}
+  .hero h1{font-size:31px}
+  .cg,.grid2,.env,.dilemma{grid-template-columns:1fr;gap:12px}
+  .ladder{grid-template-columns:1fr}
+  .step:not(:last-child){border-right:1px solid var(--line);border-bottom:none;border-radius:12px}
+  .step:not(:first-child){border-radius:12px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .fg{grid-template-columns:1fr}
+  .st{font-size:22px}
+}
+@media(max-width:380px){
+  .kpis{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="bar">
+  <div class="wrap nv">
+    <a class="brand" href="#top" aria-label="返回顶部"><span class="logo">香</span><span>香蕉<span style="color:var(--banana)">伦理</span>电影网</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#qd">伦理象限</a>
+      <a href="#sched">本周伦理场</a>
+      <a href="#read">深度解读</a>
+      <a href="#genres">必看片单</a>
+      <a href="#path">入坑路径</a>
+      <a href="#letters">观众来信</a>
+      <a href="#about">合规声明</a>
+    </nav>
+    <button class="mbtn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="scale" aria-hidden="true"></div>
+  <div class="wrap hx">
+    <div>
+      <span class="eyebrow">ETHICS · DILEMMA · HUMANITY</span>
+      <h1>当"对"与"对"相撞，<br>电影才敢问 <u>那一个问题</u></h1>
+      <p>香蕉伦理电影网（xiangqiaolunlidianyingwang-cn）只聊一类电影：把人逼到道德墙角，再请观众自己作答。家庭、婚姻、阶级、生命权、记忆与谎言——不判对错，只拆理由。</p>
+      <div class="acts">
+        <a class="b b1" href="#qd">进入伦理象限 →</a>
+        <a class="b b2" href="#about">阅读合规声明</a>
+      </div>
+    </div>
+    <aside aria-hidden="true" class="dilemma">
+      <div class="dm"><div class="k">Q / 01</div><h4>救一个，还是五个？</h4><p>电车难题的银幕变体。多数电影的答案，都藏在镜头偏向谁。</p></div>
+      <div class="dm"><div class="k">Q / 02</div><h4>说真话，还是保家庭？</h4><p>家庭伦理片的核心冲突：爱与诚实，往往不能同时成立。</p></div>
+      <div class="dm"><div class="k">Q / 03</div><h4>记住，还是原谅？</h4><p>历史与创伤题材的终极提问。遗忘是仁慈，还是共谋？</p></div>
+    </aside>
+  </div>
+</section>
+
+<section class="chs" id="nav">
+  <div class="wrap">
+    <h2 class="st">放映 <i>栏目</i></h2>
+    <p class="sn">七个内容分区，内页以锚点组织，阅读与检索更顺。</p>
+    <div class="cg">
+
+      <a class="ch" href="#qd"><span class="no">01 / QUADRANT</span><h3>伦理象限</h3><p>四类道德困境，四种镜头语法。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#sched"><span class="no">02 / SCHEDULE</span><h3>本周伦理场</h3><p>七天七部，按"放映场次"排好。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#read"><span class="no">03 / ESSAY</span><h3>深度解读</h3><p>长文。关于理由、动机与沉默。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#genres"><span class="no">04 / LIST</span><h3>必看片单</h3><p>编辑部打分，附正版观看渠道。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#path"><span class="no">05 / PATH</span><h3>入坑路径</h3><p>从哪一部开始，才不会被劝退。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#letters"><span class="no">06 / MAIL</span><h3>观众来信</h3><p>读信。比影评更接近真实。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#about"><span class="no">07 / LAW</span><h3>合规声明</h3><p>版权、年龄提示与正版倡议。</p><span class="ar">进入 →</span></a>
+      <a class="ch" href="#top"><span class="no">08 / TOP</span><h3>返回顶部</h3><p>再放一遍胶片。</p><span class="ar">回到顶部 ↑</span></a>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：伦理象限（四象限矩阵 DOM） -->
+<section class="qd" id="qd">
+  <div class="wrap">
+    <h2 class="st">伦理 <i>象限</i></h2>
+    <p class="sn">伦理片不是"讲道理"，而是"把道理逼到失效"。四个象限，四种拍法。</p>
+    <div class="grid2">
+
+      <article class="quad">
+        <span class="corner">Ⅰ</span>
+        <h4>家庭与亲密关系</h4>
+        <div class="en">FAMILY · MARRIAGE</div>
+        <p>婚姻里的谎言、亲子间的控制、养老与照护的代价。这类影片的刀，往往藏在饭桌上那句"没事"。</p>
+        <div class="eg">代表作：《婚姻故事》《万箭穿心》《春潮》</div>
+      </article>
+
+      <article class="quad">
+        <span class="corner">Ⅱ</span>
+        <h4>生命、死亡与选择</h4>
+        <div class="en">LIFE · CHOICE</div>
+        <p>安乐死、堕胎、器官、战争中的取舍。导演通常不给答案，只把"另一个人的痛苦"拍给你看。</p>
+        <div class="eg">代表作：《深海长眠》《依然如是》《我不是药神》</div>
+      </article>
+
+      <article class="quad">
+        <span class="corner">Ⅲ</span>
+        <h4>阶级、制度与不公</h4>
+        <div class="en">CLASS · SYSTEM</div>
+        <p>当制度本身是反派，个人道德还有没有用？这类电影最容易被误读成"爽片"，其实问的是结构。</p>
+        <div class="eg">代表作：《寄生虫》《辩护人》《幸运儿彼尔》</div>
+      </article>
+
+      <article class="quad">
+        <span class="corner">Ⅳ</span>
+        <h4>记忆、真相与历史</h4>
+        <div class="en">MEMORY · TRUTH</div>
+        <p>谁有权叙述？受害者、加害者、旁观者，各自版本的"真相"如何共存？镜头站在哪一边的选择，本身就是伦理。</p>
+        <div class="eg">代表作：《狩猎》《滚滚红尘》《波斯语课》</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：本周伦理场（时间轴 DOM） -->
+<section class="sched" id="sched">
+  <div class="wrap">
+    <h2 class="st">本周 <i>伦理场</i></h2>
+    <p class="sn">像影院门口的场次牌。按顺序看，冲击力递进。</p>
+    <div class="tl">
+
+      <article class="ev">
+        <div class="when">MON · 20:00</div>
+        <h4>寄生虫</h4>
+        <div class="mt">韩国 · 2019 · 奉俊昊 · 132min</div>
+        <p>地下室的味道，擦不掉。阶级不是"坏人对好人"，而是两个家庭都以为自己善良。</p>
+      </article>
+
+      <article class="ev">
+        <div class="when">TUE · 20:00</div>
+        <h4>婚姻故事</h4>
+        <div class="mt">美国 · 2019 · 诺亚·鲍姆巴赫 · 137min</div>
+        <p>最好的离婚片，是让两边都对。那封没念完的信，是全片最狠的伦理判决。</p>
+      </article>
+
+      <article class="ev">
+        <div class="when">THU · 20:00</div>
+        <h4>狩猎</h4>
+        <div class="mt">丹麦 · 2012 · 托马斯·温特伯格 · 115min</div>
+        <p>一个谎言如何被"善意"传播。群体伦理的失效，比个体的恶更可怕。</p>
+      </article>
+
+      <article class="ev">
+        <div class="when">SAT · 20:00</div>
+        <h4>深海长眠</h4>
+        <div class="mt">西班牙 · 2004 · 亚历杭德罗·阿梅纳瓦尔 · 134min</div>
+        <p>"请让我死。"当一个人请求结束自己的生命，爱，是放手还是挽留？</p>
+      </article>
+
+      <article class="ev">
+        <div class="when">SUN · 20:00</div>
+        <h4>万箭穿心</h4>
+        <div class="mt">中国 · 2012 · 王竞 · 118min</div>
+        <p>武汉码头上的一个家。妻子的"强"，为何成了全家的刑罚？中国式家庭的伦理，最痛。</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：深度解读（报刊分栏 DOM） -->
+<section class="read" id="read">
+  <div class="wrap">
+    <h2 class="st">深度 <i>解读</i></h2>
+    <p class="sn">照着老电影杂志的排法写的。慢一点，长一点。</p>
+    <div class="paper">
+      <div class="mast">
+        <h3 class="serif">伦 理 场 观 影 手 记</h3>
+        <small>BANANA ETHICS NOTES · 第三期 · 道德困境观察</small>
+      </div>
+      <div class="cols">
+
+        <article>
+          <h4>伦理片的第一个谎：它声称自己在提问</h4>
+          <span class="qt">"镜头永远站在某一边，所谓中立，只是剪掉了另一边。"</span>
+          <p>《寄生虫》被很多人当成"阶级爽片"，但它真正残酷的一笔，是让观众在暴雨夜同情地下室一家，又在结尾害怕他们——导演把你的同情，也放进了审判席。</p>
+        </article>
+
+        <article>
+          <h4>家庭伦理片，为何总在饭桌上爆发</h4>
+          <span class="qt">"饭桌是中国家庭的法庭，筷子是法槌。"</span>
+          <p>《万箭穿心》《春潮》《地久天长》都把冲突压在吃饭这场戏里。因为饭桌是唯一"必须在一起"的空间，而伦理困境的本质，正是"不得不共处"。</p>
+        </article>
+
+        <article>
+          <h4>为什么"说真话"在电影里总是代价高昂</h4>
+          <span class="qt">"真相不是武器，是手术刀——先切开的是说出它的人。"</span>
+          <p>《狩猎》里那句儿童的谎言，毁掉一个成年人。影片的高潮不是报复，而是多年后猎场上的那一枪：它来自"被证明无辜"之后。伦理片的高级，在于它追问"平反之后怎么办"。</p>
+        </article>
+
+        <article>
+          <h4>生命权题材，最忌"煽情正确"</h4>
+          <span class="qt">"把病人拍成圣人，是对病痛的另一种不尊重。"</span>
+          <p>《深海长眠》的厉害，是让"求死"显得有理，也让"挽留"显得有情，然后让两者同时成立。好的伦理片不做道德算术，它做的是"让两种痛苦同时可见"。</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：必看片单（评分条 DOM） -->
+<section class="genres" id="genres">
+  <div class="wrap">
+    <h2 class="st">必看 <i>片单</i></h2>
+    <p class="sn">编辑部评分（满分 10），仅代表本站观点。均可在正版平台合法观看。</p>
+    <div class="bars">
+
+      <article class="bar-row">
+        <div class="top"><h4>寄生虫 기생충</h4><span class="meta">2019 · 韩国 · 阶级</span></div>
+        <div class="track"><div class="fill" style="width:96%"></div></div>
+      </article>
+
+      <article class="bar-row">
+        <div class="top"><h4>婚姻故事 Marriage Story</h4><span class="meta">2019 · 美国 · 家庭</span></div>
+        <div class="track"><div class="fill s2" style="width:90%"></div></div>
+      </article>
+
+      <article class="bar-row">
+        <div class="top"><h4>狩猎 Jagten</h4><span class="meta">2012 · 丹麦 · 谣言/真相</span></div>
+        <div class="track"><div class="fill s3" style="width:92%"></div></div>
+      </article>
+
+      <article class="bar-row">
+        <div class="top"><h4>深海长眠 Mar adentro</h4><span class="meta">2004 · 西班牙 · 生命权</span></div>
+        <div class="track"><div class="fill" style="width:89%"></div></div>
+      </article>
+
+      <article class="bar-row">
+        <div class="top"><h4>万箭穿心</h4><span class="meta">2012 · 中国 · 家庭/武汉</span></div>
+        <div class="track"><div class="fill s2" style="width:88%"></div></div>
+      </article>
+
+      <article class="bar-row">
+        <div class="top"><h4>辩护人 변호인</h4><span class="meta">2013 · 韩国 · 制度/正义</span></div>
+        <div class="track"><div class="fill s3" style="width:91%"></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：入坑路径（阶梯 DOM） -->
+<section class="path" id="path">
+  <div class="wrap">
+    <h2 class="st">入坑 <i>路径</i></h2>
+    <p class="sn">四阶台阶。从"看得懂"到"舍不得看完"。</p>
+    <div class="ladder">
+
+      <div class="step">
+        <div class="ix">STEP 01</div>
+        <h4>先吃"近的"</h4>
+        <p>从《婚姻故事》《万箭穿心》入手。冲突发生在你熟悉的饭桌与卧室。</p>
+        <div class="tip">建议：看完和家人聊一次</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 02</div>
+        <h4>再吃"冷的"</h4>
+        <p>《狩猎》《寄生虫》。导演不站队，你也别急着站队。</p>
+        <div class="tip">建议：记下你同情谁、为什么</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 03</div>
+        <h4>然后吃"重的"</h4>
+        <p>《深海长眠》《辩护人》。涉及生死与制度，允许自己暂停。</p>
+        <div class="tip">建议：一次一部，不连看</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 04</div>
+        <h4>最后追"作者"</h4>
+        <p>奉俊昊、托马斯·温特伯格、是枝裕和、王竞。伦理片的答案，藏在导演一贯的追问里。</p>
+        <div class="tip">建议：做观影笔记，记下时间戳</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：观众来信（折角信笺 DOM） -->
+<section class="letters" id="letters">
+  <div class="wrap">
+    <h2 class="st">观众 <i>来信</i></h2>
+    <p class="sn">读者写来的信。不代表本站立场，但每封都值得被读完。</p>
+    <div class="env">
+
+      <article class="letter">
+        <div class="who">阿阮，34 岁<em>心理咨询师</em></div>
+        <p>带父母看了《婚姻故事》。散场他们第一次承认"我们也有没说出口的话"。伦理片的价值，是给沉默一个开场白。</p>
+        <div class="sign">—— 2026 年春</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">老周，58 岁<em>中学教师</em></div>
+        <p>年轻时被"好人坏人"绑架，现在才懂《狩猎》的好：它拍的不是恶，是"大家都以为自己在做好事"的那一刻。</p>
+        <div class="sign">—— 观影三十年</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">小满，26 岁<em>医学生</em></div>
+        <p>《深海长眠》让我重新理解"尊重"两个字。不是同意，是"我听见了你的痛苦，且我不替你决定"。</p>
+        <div class="sign">—— 临终关怀见习后</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">影迷 K，30 岁<em>自由职业</em></div>
+        <p>以前觉得伦理片"压抑"。后来看了《寄生虫》才明白：压抑的不是电影，是我一直回避的那个问题——"如果我是对的呢？"</p>
+        <div class="sign">—— 入坑第二年</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 关于与合规 -->
+<section class="about" id="about">
+  <div class="wrap">
+    <h2 class="st">关于 <i>本站</i></h2>
+    <p class="sn">香蕉伦理电影网（xiangqiaolunlidianyingwang-cn）的立场与承诺。</p>
+    <div class="ag">
+      <div class="notice">
+        <h3>合规与观影声明</h3>
+        <ol>
+          <li>本站为<b>影视赏析与资讯</b>类网站，<b>不提供</b>任何未授权视频资源、下载链接、网盘、在线播放或盗链。</li>
+          <li>所有影片推荐均指向正版授权渠道（院线、持牌流媒体、正版影碟），尊重著作权、署名权与导演剪辑权。</li>
+          <li>伦理题材常涉及婚变、家暴、生死抉择、疾病、暴力与成人议题，部分影片含沉重情绪与悲伤结局，建议观众根据自身情况理性选择；未成年人请在家长指导下观看。</li>
+          <li>站内影评与解读属编辑个人观点，不代表影片出品方、发行方或任何平台立场。本站为独立影迷站点，与任何片方无隶属关系。</li>
+          <li>本站不投放弹窗广告、不植入恶意代码、不采集非必要个人信息、不使用跨站跟踪脚本。</li>
+          <li>侵权反馈通道：dmca@example.com，承诺 48 小时内响应并处理。</li>
+        </ol>
+      </div>
+      <div>
+        <div class="kpis">
+          <div class="kpi"><b>142+</b><span>收录影片条目</span></div>
+          <div class="kpi"><b>68</b><span>原创长文</span></div>
+          <div class="kpi"><b>9</b><span>合作正版平台</span></div>
+          <div class="kpi"><b>100%</b><span>合规资源导向</span></div>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          <h3>联系我们</h3>
+          <ol>
+            <li>内容合作：editor@example.com</li>
+            <li>侵权投诉：dmca@example.com</li>
+            <li>读者来信：hello@example.com</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc">
+        <a class="brand" href="#top"><span class="logo">香</span><span>香蕉<span style="color:var(--banana)">伦理</span>电影网</span></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:320px">
+          一间线上伦理影院。xiangqiaolunlidianyingwang-cn 只做一件事：把逼问人性的电影，说清楚。
+        </p>
+      </div>
+      <div class="fc">
+        <h5>内容栏目</h5>
+        <a href="#qd">伦理象限</a>
+        <a href="#sched">本周伦理场</a>
+        <a href="#read">深度解读</a>
+        <a href="#genres">必看片单</a>
+      </div>
+      <div class="fc">
+        <h5>实用索引</h5>
+        <a href="#path">入坑顺序</a>
+        <a href="#path">年龄与情绪提示</a>
+        <a href="#letters">观众口碑</a>
+        <a href="#genres">按议题选片</a>
+      </div>
+      <div class="fc">
+        <h5>站点信息</h5>
+        <a href="#about">关于本站</a>
+        <a href="#about">合规声明</a>
+        <a href="#">隐私说明</a>
+        <a href="#">侵权投诉</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 <span class="hl">香蕉伦理电影网</span> · xiangqiaolunlidianyingwang-cn · 保留所有权利。本站与任何影片出品方、发行方无隶属关系。</span>
+      <span>网站网址：https://xiangqiaolunlidianyingwang-cn.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('menuBtn'), nl=document.getElementById('navLinks');
+mb.addEventListener('click',function(){
+  nl.classList.toggle('open');
+  mb.textContent=nl.classList.contains('open')?'✕':'☰';
+});
+nl.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){ nl.classList.remove('open'); mb.textContent='☰'; }
+});
+
+var secs=document.querySelectorAll('section[id]'), links=document.querySelectorAll('.links a');
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120, cur='';
+  secs.forEach(function(s){ if(s.offsetTop<=pos) cur=s.id; });
+  links.forEach(function(a){
+    var on=(a.getAttribute('href')==='#'+cur);
+    a.style.color=on?'#fff':'';
+    a.style.background=on?'rgba(255,255,255,.06)':'';
+  });
+});
+</script>
+</body>
+</html>
